@@ -41,32 +41,43 @@ class PageTwo extends StatelessWidget {
                     width: 80,
                     color: Colors.red,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            // previously `primary`
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
-                            ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 0,
+                            top: 23,
                           ),
-                          child: FaIcon(
-                            FontAwesomeIcons.pagelines,
-                            size: 60,
-                          ),
-                        ),
-                        ElevatedButton(
+                          child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
+                              // previously `primary`
+                              fixedSize: Size(75, 75),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18),
                               ),
                             ),
                             child: FaIcon(
                               FontAwesomeIcons.pagelines,
-                              size: 60,
-                            )),
+                              size: 40,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 5, left: 0),
+                          child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(75, 75), //vibeCoding on point
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18),
+                                ),
+                              ),
+                              child: FaIcon(
+                                FontAwesomeIcons.calculator,
+                                size: 40,
+                              )),
+                        ),
                       ],
                     ),
                   ),
@@ -75,38 +86,53 @@ class PageTwo extends StatelessWidget {
                     width: 80,
                     color: const Color.fromARGB(255, 231, 12, 158),
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            // previously `primary`
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
-                            ),
-                          ),
-                          child: FaIcon(
-                            FontAwesomeIcons.pagelines,
-                            size: 60,
-                          ),
-                        ),
-                        ElevatedButton(
+                        Padding(
+                          padding: const EdgeInsets.only(top: 23, right: 4),
+                          child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
+                              fixedSize: Size(75, 75),
                               // previously `primary`
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18),
                               ),
+                              alignment: Alignment.center,
+                              padding: EdgeInsets.zero,
                             ),
                             child: FaIcon(
-                              FontAwesomeIcons.pagelines,
-                              size: 60,
-                            )),
+                              FontAwesomeIcons.peopleGroup,
+                              size: 40,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 5, right: 4),
+                          child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                // previously `primary`
+                                fixedSize: Size(75, 75),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18),
+                                ),
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.zero,
+                              ),
+                              child: FaIcon(
+                                FontAwesomeIcons.instagram,
+                                size: 50,
+                              )),
+                        ),
                       ],
                     ),
                   ),
+                  SizedBox(
+                    width: 9,
+                  ),
                   Container(
-                    height: 200,
+                    height: 175,
                     width: 80,
                     color: const Color.fromARGB(255, 12, 247, 71),
                     child: Padding(
@@ -157,7 +183,7 @@ class PageTwo extends StatelessWidget {
                     ),
                   ),
                   Container(
-                      height: 200,
+                      height: 175,
                       width: 80,
                       color: const Color.fromARGB(255, 55, 5, 172),
                       child: Padding(
