@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:intl/intl.dart';
 
 class PageTwo extends StatelessWidget {
   const PageTwo({super.key});
   @override
   Widget build(BuildContext context) {
+    String formattedDate = DateFormat('MMM dd').format(DateTime.now());
+
     return Column(children: [
       Padding(
         padding: const EdgeInsets.only(top: 65.0, left: 20, right: 20),
@@ -238,7 +241,18 @@ class PageTwo extends StatelessWidget {
               Container(height: 10, color: Colors.blue),
               Container(
                 height: 150,
-                color: Colors.purple,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18),
+                  color: Colors.purple,
+                ),
+                child: Column(
+                  children: [
+                    Text('$formattedDate'),
+                    Row(
+                      
+                    ),
+                  ],
+                ),
               ),
               Container(height: 10, color: Colors.blue),
               Row(
